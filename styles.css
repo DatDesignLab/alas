@@ -670,7 +670,7 @@ em { font-style: italic; }
 .pcard__face * { -webkit-backface-visibility: hidden; backface-visibility: hidden; }
 /* belt and braces: Safari ignores backface-visibility on positioned children (the title showed through,
    mirrored), so the front is also hidden outright once the flip passes the half-way point */
-.pcard__front { transition: visibility 0s linear .375s; }
+.pcard__front { transition: visibility 0s linear .115s; }   /* with --ease the .75s flip passes 90° at ~15%: hide the front exactly then */
 .pcard picture, .pcard__img, .pcard__art { position: absolute; inset: 0; width: 100%; height: 100%; }
 .pcard__img { object-fit: cover; }
 .pcard__front::before {

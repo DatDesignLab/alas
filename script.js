@@ -170,9 +170,7 @@
     card.addEventListener('click', function (e) {
       if (e.target.closest('a, button')) return;          // the Explore button just works
       if (hoverCapable.matches) return;                   // a mouse flips by hovering
-      var open = !card.classList.contains('is-flipped');
-      closeCards(card);                                   // one card open at a time on touch
-      card.classList.toggle('is-flipped', open);
+      card.classList.toggle('is-flipped');               // each card flips on its own; others stay as they are
     });
     card.addEventListener('keydown', function (e) { if (e.key === 'Escape') card.classList.remove('is-flipped'); });
   });

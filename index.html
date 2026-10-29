@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALAS · Ayudando Latinos A Soñar · La Cultura Cura</title>
+  <!-- [meta description, Masha/Dylan to approve]: using Masha's hero subheadline for now -->
+  <meta name="description" content="Rooted in the strength of immigrant and farmworker communities, ALAS is reimagining what is possible when love, culture, and community lead the way.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" type="image/webp" imagesrcset="img/hero-640.webp 640w, img/hero-1024.webp 1024w, img/hero-1600.webp 1600w" imagesizes="100vw">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" data-header>
+  <div class="site-header__inner container">
+    <a aria-label="ALAS: Ayudando Latinos A Soñar, home" class="site-header__logo" href="/">
+      <picture>
+        <source type="image/webp" srcset="img/alas-logo-banner.webp">
+        <img src="img/alas-logo-banner.webp" alt="" width="502" height="118">
+      </picture>
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul class="site-nav__list">
+        <li><a href="#">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#">News &amp; Stories</a></li>
+        <li><a href="#join">Get Involved</a></li>
+        <li><a href="#">Get Support</a></li>
+        <li><a href="#">Contact</a></li>
+        <!-- mobile menu only: Donate and the language switch, so neither is ever hidden on a phone -->
+        <li class="site-nav__mobile-only site-nav__donate"><a class="btn btn--primary" href="#">Donate</a></li>
+        <li class="site-nav__mobile-only site-nav__lang" role="group" aria-label="Language">
+          <a href="#" aria-current="true" lang="en">English</a>
+          <a href="#" lang="es" title="Spanish version coming soon">Español</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="site-header__actions">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <a href="#" aria-current="true" lang="en">EN</a>
+        <a href="#" lang="es" title="Spanish version coming soon">ES</a>
+      </div>
+      <a class="btn btn--primary btn--small" href="#">Donate</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ 0. HERO ============ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <picture class="hero__media">
+      <source type="image/webp" srcset="img/hero-640.webp 640w, img/hero-1024.webp 1024w, img/hero-1600.webp 1600w" sizes="100vw">
+      <img src="img/hero-1600.webp" srcset="img/hero-640.webp 640w, img/hero-1024.webp 1024w, img/hero-1600.webp 1600w" sizes="100vw" width="2048" height="1575" fetchpriority="high" alt="A woman in a “Yo soy ALAS” hoodie throws her arms open wide in front of a colourful mural, smiling up at the sky.">
+    </picture>
+
+    <!-- Papel picado: built by script.js, purely decorative -->
+    <div class="papel" data-papel aria-hidden="true"></div>
+
+    <div class="hero__content container">
+      <h1 class="hero__title" id="hero-title" lang="es">La Cultura Cura.</h1>
+      <p class="hero__translation"><em>Culture Heals.</em></p>
+      <!-- Dylan trimmed Masha's sentence: the "rooted in the strength of immigrant and farmworker communities" part now sits in the What we believe band. -->
+      <p class="hero__sub">ALAS is reimagining what is possible when love, culture, and community lead the way.</p>
+      <!-- Hero button not specified by Masha: one primary only, for approval -->
+      <a class="btn btn--primary" href="#">Get involved</a>
+    </div>
+  </section>
+
+  <!-- ============ 1. WHAT WE BELIEVE: flyer style (colour bands, waves, round photos on cards) ============ -->
+  <section class="believe" aria-labelledby="believe-title">
+
+    <!-- band 1: orange, headline on a yellow panel, the team photo fading in from the right -->
+    <div class="believe__top texture texture--orange">
+      <svg class="folk folk--tl" viewBox="0 0 200 240" aria-hidden="true"><use href="#folk-corner"/></svg>
+      <figure class="believe__photo">
+        <picture>
+          <source type="image/webp" srcset="img/team-field-640.webp 640w, img/team-field-1024.webp 1024w, img/team-field-1600.webp 1600w" sizes="(min-width: 900px) 62vw, 100vw">
+          <img src="img/team-field-1024.webp" srcset="img/team-field-640.webp 640w, img/team-field-1024.webp 1024w, img/team-field-1600.webp 1600w" sizes="(min-width: 900px) 62vw, 100vw"
+               width="1735" height="1121" loading="lazy"
+               alt="ALAS team members and farmworkers stand side by side in a farm field, arms around each other.">
+        </picture>
+      </figure>
+      <div class="believe__badge" aria-hidden="true">
+        <picture><source type="image/webp" srcset="img/milagro-640.webp"><img class="milagro" src="img/milagro-640.webp" width="640" height="344" alt=""></picture>
+      </div>
+      <div class="container believe__head">
+        <!-- Dylan's wording (not in Masha's copy). Check with Belinda/Masha: "Latino-led" vs "Latina-led". -->
+        <p class="chip-title believe__statement"><span>Latino-led non-profit rooted in the strength of immigrant and farmworker communities</span></p>
+      </div>
+    </div>
+
+    <!-- band 2: teal, three belief cards with round photos -->
+    <div class="believe__mid wave-top texture texture--teal">
+      <div class="container">
+        <h2 class="chip-title chip-title--md believe__title" id="believe-title"><span>What we believe</span></h2>
+        <ol class="bcards">
+        <li class="bcard bcard--pink reveal">
+          <picture class="bcard__photo">
+            <source type="image/webp" srcset="img/belief-love-480.webp">
+            <img src="img/belief-love-480.webp" width="480" height="480" loading="lazy" alt="A young woman in heart-shaped glasses and a flower crown laughs, with colourful papel picado overhead.">
+          </picture>
+          <div class="bcard__head"><h3>Love Changes Lives</h3></div>
+          <p>Everyone deserves to be seen, loved, and treated with dignity. Our shared humanity connects us, and when we feel we belong, anything is possible.</p>
+        </li>
+        <li class="bcard bcard--orange reveal">
+          <picture class="bcard__photo">
+            <source type="image/webp" srcset="img/belief-culture-480.webp">
+            <img src="img/belief-culture-480.webp" width="480" height="480" loading="lazy" alt="A boy in a black charro suit and red bow, wearing a wide sombrero, smiles in front of a colourful mural.">
+          </picture>
+          <div class="bcard__head"><h3>Culture Is Medicine</h3></div>
+          <p>Through art, music, dance, and celebration, we honor our roots, inspire pride, and heal together.</p>
+        </li>
+        <li class="bcard bcard--yellow reveal">
+          <picture class="bcard__photo">
+            <source type="image/webp" srcset="img/belief-community-480.webp">
+            <img src="img/belief-community-480.webp" width="480" height="480" loading="lazy" alt="Two people share a warm, laughing hug under a bamboo shade.">
+          </picture>
+          <div class="bcard__head"><h3>The Power of <br>Our Communities</h3></div>
+          <p>Our communities are full of strength, wisdom, and courage. Together, we rise beyond survival, reclaim our stories, and build the future we dream of.</p>
+        </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo band: a big horizontal image as a breather between sections -->
+  <figure class="photo-band" style="--pos: 50% 38%">
+    <picture>
+      <source type="image/webp" srcset="img/band-hug-1024.webp 1024w, img/band-hug-1600.webp 1600w" sizes="100vw">
+      <img src="img/band-hug-1600.webp" srcset="img/band-hug-1024.webp 1024w, img/band-hug-1600.webp 1600w" sizes="100vw" width="1768" height="1131" loading="lazy" data-parallax alt="Farmworkers in green hoodies hug and laugh together in a field at golden hour.">
+    </picture>
+  </figure>
+
+  <!-- ============ 2. OUR MODEL FOR CHANGE ============ -->
+  <section class="section model wave-top texture texture--purple" id="model" aria-labelledby="model-title">
+    <div class="container">
+      <header class="model__head">
+        <h2 class="chip-title chip-title--md chip-title--orange chip-title--ink model__title" id="model-title"><span>Our Model</span><br><span class="has-descender">For Change</span></h2>
+        <p class="model__intro">At ALAS, we believe everyone deserves to live with love, dignity, and joy.<br>
+          <strong>La Cultura Cura is how we turn love into transformation.</strong></p>
+      </header>
+
+      <div class="model__steps" role="tablist" aria-label="La Cultura Cura: the six steps">
+        <button class="model__step" role="tab" id="step-tab-1" aria-controls="step-panel-1" aria-selected="true" aria-label="Step 1: Culture + Arts" data-step="1" tabindex="0">
+          <picture><source type="image/webp" srcset="img/step-1-culture-arts.webp"><img src="img/step-1-culture-arts.webp" alt="" width="313" height="313"></picture>
+          <span class="model__num" aria-hidden="true">1</span>
+        </button>
+        <button class="model__step" role="tab" id="step-tab-2" aria-controls="step-panel-2" aria-selected="false" aria-label="Step 2: Belonging" data-step="2" tabindex="-1">
+          <picture><source type="image/webp" srcset="img/step-2-belonging.webp"><img src="img/step-2-belonging.webp" alt="" width="315" height="315"></picture>
+          <span class="model__num" aria-hidden="true">2</span>
+        </button>
+        <button class="model__step" role="tab" id="step-tab-3" aria-controls="step-panel-3" aria-selected="false" aria-label="Step 3: Healing + Hope" data-step="3" tabindex="-1">
+          <picture><source type="image/webp" srcset="img/step-3-healing-hope.webp"><img src="img/step-3-healing-hope.webp" alt="" width="303" height="303"></picture>
+          <span class="model__num" aria-hidden="true">3</span>
+        </button>
+        <button class="model__step" role="tab" id="step-tab-4" aria-controls="step-panel-4" aria-selected="false" aria-label="Step 4: Leadership" data-step="4" tabindex="-1">
+          <picture><source type="image/webp" srcset="img/step-4-leadership.webp"><img src="img/step-4-leadership.webp" alt="" width="318" height="318"></picture>
+          <span class="model__num" aria-hidden="true">4</span>
+        </button>
+        <button class="model__step" role="tab" id="step-tab-5" aria-controls="step-panel-5" aria-selected="false" aria-label="Step 5: Family + Community Wellbeing" data-step="5" tabindex="-1">
+          <picture><source type="image/webp" srcset="img/step-5-family-community-wellbeing.webp"><img src="img/step-5-family-community-wellbeing.webp" alt="" width="309" height="309"></picture>
+          <span class="model__num" aria-hidden="true">5</span>
+        </button>
+        <button class="model__step" role="tab" id="step-tab-6" aria-controls="step-panel-6" aria-selected="false" aria-label="Step 6: Systems Change + Narrative Change" data-step="6" tabindex="-1">
+          <picture><source type="image/webp" srcset="img/step-6-systems-narrative-change.webp"><img src="img/step-6-systems-narrative-change.webp" alt="" width="330" height="330"></picture>
+          <span class="model__num" aria-hidden="true">6</span>
+        </button>
+      </div>
+
+      <div class="model__panels">
+        <div class="model__panel" role="tabpanel" id="step-panel-1" aria-labelledby="step-tab-1">
+          <p class="model__count">Step 1 of 6</p>
+          <h3>Culture + Arts</h3>
+          <p>Our model begins with culture: art, music, and cultural traditions.</p>
+          <a class="link-arrow" href="#">Learn more about our model</a>
+        </div>
+        <div class="model__panel" role="tabpanel" id="step-panel-2" aria-labelledby="step-tab-2" hidden>
+          <p class="model__count">Step 2 of 6</p>
+          <h3>Belonging</h3>
+          <p>We build trusting relationships and a deep sense of belonging.</p>
+          <a class="link-arrow" href="#">Learn more about our model</a>
+        </div>
+        <div class="model__panel" role="tabpanel" id="step-panel-3" aria-labelledby="step-tab-3" hidden>
+          <p class="model__count">Step 3 of 6</p>
+          <h3>Healing + Hope</h3>
+          <p>With that trust, people begin their journeys of healing and mental wellbeing. Healing ignites hope and hope awakens <em lang="es">ganas</em>.</p>
+          <a class="link-arrow" href="#">Learn more about our model</a>
+        </div>
+        <div class="model__panel" role="tabpanel" id="step-panel-4" aria-labelledby="step-tab-4" hidden>
+          <p class="model__count">Step 4 of 6</p>
+          <h3>Leadership</h3>
+          <p>As individuals and families pursue educational and economic opportunities, they grow as leaders.</p>
+          <a class="link-arrow" href="#">Learn more about our model</a>
+        </div>
+        <div class="model__panel" role="tabpanel" id="step-panel-5" aria-labelledby="step-tab-5" hidden>
+          <p class="model__count">Step 5 of 6</p>
+          <h3>Family + Community Wellbeing</h3>
+          <p>They transform their lives and strengthen their communities.</p>
+          <a class="link-arrow" href="#">Learn more about our model</a>
+        </div>
+        <div class="model__panel" role="tabpanel" id="step-panel-6" aria-labelledby="step-tab-6" hidden>
+          <p class="model__count">Step 6 of 6</p>
+          <h3>Systems Change + Narrative Change</h3>
+          <p>Through our groundbreaking research, we change policies, shape new narratives, and pollinate other communities.</p>
+          <a class="link-arrow" href="#">Learn more about our model</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo band: a big horizontal image as a breather between sections -->
+  <figure class="photo-band" style="--pos: 50% 28%">
+    <picture>
+      <source type="image/webp" srcset="img/band-mariachi-1024.webp 1024w, img/band-mariachi-1600.webp 1600w" sizes="100vw">
+      <img src="img/band-mariachi-1600.webp" srcset="img/band-mariachi-1024.webp 1024w, img/band-mariachi-1600.webp 1600w" sizes="100vw" width="2048" height="1600" loading="lazy" data-parallax alt="Young mariachi musicians with guitars and a trumpet smile in front of a bright pink door.">
+    </picture>
+  </figure>
+
+  <!-- ============ 3. OUR PROGRAMS ============ -->
+  <section class="section programs" id="programs" aria-labelledby="programs-title">
+    <div class="container">
+      <h2 class="chip-title chip-title--md chip-title--pink programs__title" id="programs-title"><span>Our programs</span></h2>
+
+      <!-- Flip cards: title over the photo; hover (or tap) flips to Masha's line and the Explore button. The dark card leads to all programs. -->
+      <ul class="programs-grid">
+        <li class="pcard pcard--pink">
+          <div class="pcard__inner">
+            <div class="pcard__face pcard__front">
+              <picture>
+                <source type="image/webp" srcset="img/embrace-640.webp 640w, img/embrace-1024.webp 1024w" sizes="(min-width: 1100px) 420px, 82vw">
+                <img class="pcard__img" src="img/embrace-640.webp" width="1536" height="2048" loading="lazy" style="object-position: 50% 30%" alt="Two women hold each other in a warm, eyes-closed embrace.">
+              </picture>
+              <div class="pcard__head"><h3 class="pcard__title">Mental Health &amp; Wellbeing</h3></div>
+              <span class="pcard__hint" aria-hidden="true">+</span>
+            </div>
+            <div class="pcard__face pcard__back" id="pcard-mental">
+              <p class="pcard__back-title" aria-hidden="true">Mental Health &amp; Wellbeing</p>
+              <div class="pcard__back-body">
+                <p>Through culturally rooted mental health care, healing circles, and wellness practices, we help people reclaim their strength, rediscover their <em lang="es">ganas</em>, and reconnect with their dreams.</p>
+              </div>
+              <a class="btn btn--light" href="#">Explore<span class="sr-only">: Mental Health &amp; Wellbeing</span> <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="pcard pcard--yellow pcard--faces">
+          <div class="pcard__inner">
+            <div class="pcard__face pcard__front">
+              <picture>
+                <source type="image/webp" srcset="img/folklorico-640.webp 640w, img/folklorico-1024.webp 1024w" sizes="(min-width: 1100px) 420px, 82vw">
+                <img class="pcard__img" src="img/folklorico-640.webp" width="2048" height="1723" loading="lazy" style="object-position: 50% 60%" alt="Three girls in folklórico skirts spread the fabric wide like wings, smiling among the trees.">
+              </picture>
+              <div class="pcard__head"><h3 class="pcard__title">Cultural Arts &amp; Youth Development</h3></div>
+              <span class="pcard__hint" aria-hidden="true">+</span>
+            </div>
+            <div class="pcard__face pcard__back" id="pcard-cultural">
+              <p class="pcard__back-title" aria-hidden="true">Cultural Arts &amp; Youth Development</p>
+              <div class="pcard__back-body">
+                <p>Through music, dance, art, mentorship, and adventure, young people celebrate their heritage, discover their talents, and find the courage to dream big and lead.</p>
+              </div>
+              <a class="btn btn--light" href="#">Explore<span class="sr-only">: Cultural Arts &amp; Youth Development</span> <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="pcard pcard--teal">
+          <div class="pcard__inner">
+            <div class="pcard__face pcard__front">
+              <picture>
+                <source type="image/webp" srcset="img/farmworker-640.webp 640w, img/farmworker-934.webp 934w" sizes="(min-width: 1100px) 420px, 82vw">
+                <img class="pcard__img" src="img/farmworker-640.webp" srcset="img/farmworker-640.webp 640w, img/farmworker-934.webp 934w" sizes="(min-width: 1100px) 420px, 82vw" width="934" height="1160" loading="lazy" style="object-position: 50% 40%" alt="Portrait of a smiling farmworker in a cap, with the fields soft in the background.">
+              </picture>
+              <div class="pcard__head"><h3 class="pcard__title">Farmworker &amp; Family Wellbeing</h3></div>
+              <span class="pcard__hint" aria-hidden="true">+</span>
+            </div>
+            <div class="pcard__face pcard__back" id="pcard-farmworker">
+              <p class="pcard__back-title" aria-hidden="true">Farmworker &amp; Family Wellbeing</p>
+              <div class="pcard__back-body">
+                <p>From our groundbreaking Equity Express Bus to family wellness and housing advocacy, we break down barriers and open new pathways to dignity, opportunity, and wellbeing for families.</p>
+              </div>
+              <a class="btn btn--light" href="#">Explore<span class="sr-only">: Farmworker &amp; Family Wellbeing</span> <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="pcard pcard--purple">
+          <div class="pcard__inner">
+            <div class="pcard__face pcard__front">
+              <picture>
+                <source type="image/webp" srcset="img/research-640.webp 640w, img/research-1024.webp 1024w" sizes="(min-width: 1100px) 420px, 82vw">
+                <img class="pcard__img" src="img/research-640.webp" srcset="img/research-640.webp 640w, img/research-1024.webp 1024w" sizes="(min-width: 1100px) 420px, 82vw" width="1024" height="715" loading="lazy" style="object-position: 45% 50%" alt="Three farmworkers stand smiling among the artichoke plants in a wide green field.">
+              </picture>
+              <div class="pcard__head"><h3 class="pcard__title">Research &amp; Systems Change</h3></div>
+              <span class="pcard__hint" aria-hidden="true">+</span>
+            </div>
+            <div class="pcard__face pcard__back" id="pcard-research">
+              <p class="pcard__back-title" aria-hidden="true">Research &amp; Systems Change</p>
+              <div class="pcard__back-body">
+                <p>Through our Colibrí Research Center, we bring community wisdom and groundbreaking research together to challenge harmful narratives, shape policies, and inspire lasting change.</p>
+              </div>
+              <a class="btn btn--light" href="#">Explore<span class="sr-only">: Research &amp; Systems Change</span> <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="pcard pcard--all texture">
+          <a class="pcard__link" href="#">
+            <span class="pcard__all-title">Explore all our programs</span>
+            <span class="pcard__arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Photo band: a big horizontal image as a breather between sections -->
+  <figure class="photo-band" style="--pos: 50% 42%">
+    <picture>
+      <source type="image/webp" srcset="img/band-table-1024.webp 1024w, img/band-table-1600.webp 1600w" sizes="100vw">
+      <img src="img/band-table-1600.webp" srcset="img/band-table-1024.webp 1024w, img/band-table-1600.webp 1600w" sizes="100vw" width="2048" height="1845" loading="lazy" data-parallax alt="A woman throws both arms up in joy beside a long farm table set under strings of papel picado.">
+    </picture>
+    <figcaption class="photo-band__text"><span class="chip chip--pink">Everyone deserves to live with love, dignity, and joy</span></figcaption>
+  </figure>
+
+  <!-- ============ 4. OUR IMPACT: highlights slider ============ -->
+  <section class="section impact" id="impact" aria-labelledby="impact-title">
+
+    <div class="container slider-head">
+      <div>
+        <h2 class="chip-title chip-title--md chip-title--teal" id="impact-title"><span>Our impact</span></h2>
+        <p class="impact__note"><span class="impact__award">California Nonprofit of the Year 2023</span></p>
+      </div>
+    </div>
+
+    <ul class="slider impact-track" id="impact-track" aria-label="Highlights and active projects">
+      <li class="hslide hslide--bus">
+        <div class="hslide__media">
+          <picture>
+            <source type="image/webp" srcset="img/bus-1024.webp 1024w, img/bus-1600.webp 1600w" sizes="(min-width: 1100px) 1040px, 88vw">
+            <img src="img/bus-1600.webp" srcset="img/bus-1024.webp 1024w, img/bus-1600.webp 1600w" sizes="(min-width: 1100px) 1040px, 88vw" width="2000" height="1428" loading="lazy" style="object-position: 50% 78%" alt="The Equity Express Bus, a double-decker covered in bright flowers, birds and butterflies, parked on a sunny street.">
+          </picture>
+        </div>
+        <div class="hslide__text">
+          <p class="hslide__eyebrow">Active project</p>
+          <h3 class="hslide__title">Equity Express Bus</h3>
+          <p><span class="ph ph--on-dark">[1–2 lines about the bus, Masha to write]</span></p>
+          <a class="btn btn--primary" href="#">Discover more<span class="sr-only">: Equity Express Bus</span></a>
+        </div>
+      </li>
+      <li class="hslide hslide--video">
+        <div class="hslide__media">
+          <div class="video" data-youtube="zsGFmonYqRY">
+            <div class="video__poster texture texture--purple">
+              <img class="video__thumb" src="https://i.ytimg.com/vi/zsGFmonYqRY/maxresdefault.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/zsGFmonYqRY/mqdefault.jpg'">
+            </div>
+            <button class="video__play" type="button" aria-label="Play the Chords of Hope video"><span aria-hidden="true"></span></button>
+          </div>
+        </div>
+        <div class="hslide__text">
+          <p class="hslide__eyebrow">Active project</p>
+          <h3 class="hslide__title">Chords of Hope</h3>
+          <p><span class="ph ph--on-dark">[1–2 lines about Chords of Hope, Masha to write]</span></p>
+          <a class="btn btn--primary" href="#">Discover more<span class="sr-only">: Chords of Hope</span></a>
+        </div>
+      </li>
+      <li class="hslide hslide--gold">
+        <div class="hslide__media">
+          <div class="hslide__logo texture texture--purple">
+            <picture><source type="image/webp" srcset="img/corazones-de-oro.webp"><img src="img/corazones-de-oro.webp" width="600" height="600" loading="lazy" alt="Corazones de Oro logo"></picture>
+            <span class="ph ph--on-dark">[Corazones de Oro photo, Masha to send]</span>
+          </div>
+        </div>
+        <div class="hslide__text">
+          <p class="hslide__eyebrow">Active project</p>
+          <h3 class="hslide__title">Corazones de Oro</h3>
+          <p><span class="ph ph--on-dark">[1–2 lines about Corazones de Oro, Masha to write]</span></p>
+          <a class="btn btn--primary" href="#">Discover more<span class="sr-only">: Corazones de Oro</span></a>
+        </div>
+      </li>
+    </ul>
+    <!-- arrows sit under the carousel, where the eye finishes -->
+    <div class="container">
+      <div class="slider-nav" data-slider-nav="impact-track">
+        <button type="button" class="slider-nav__btn" data-dir="-1" aria-label="Previous highlight"><span aria-hidden="true">←</span></button>
+        <button type="button" class="slider-nav__btn" data-dir="1" aria-label="Next highlight"><span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4b. COMMUNITY STORY: photo + dark panel ============ -->
+  <!-- Wording from ALAS's newsletter (via Dylan) · named community member: confirm consent before going live -->
+  <section class="story-band" aria-labelledby="story-title">
+    <figure class="story-band__photo">
+      <picture>
+        <source type="image/webp" srcset="img/elkin-640.webp 640w, img/elkin-1024.webp 1024w, img/elkin-1240.webp 1240w" sizes="(min-width: 900px) 45vw, 100vw">
+        <img src="img/elkin-1024.webp" srcset="img/elkin-640.webp 640w, img/elkin-1024.webp 1024w, img/elkin-1240.webp 1240w" sizes="(min-width: 900px) 45vw, 100vw"
+             width="1240" height="920" loading="lazy" style="object-position: 55% 40%"
+             alt="Elkin López smiles in a tuxedo, holding his Emmy Award in front of a giant golden Emmy statue.">
+      </picture>
+    </figure>
+    <div class="story-band__panel">
+      <p class="story-band__eyebrow">Community story</p>
+      <h2 class="story-band__name" id="story-title">Meet Elkin</h2>
+      <!-- Dylan's wording. FACT-CHECK: "young violinist", "UC Berkeley graduate" and "producer" are not in the ALAS newsletter text. -->
+      <p class="story-band__lead">We watched him grow from a young violinist in our Mariachi program into a UC Berkeley graduate and an Emmy Award-winning producer.</p>
+      <blockquote class="story-band__quote">
+        <p>This is what we dream of at ALAS. Seeing our youth rise, seeing dreams come to reality.</p>
+      </blockquote>
+      <div class="story-band__actions">
+        <a class="btn-outline" href="#"><span class="btn-outline__arrow" aria-hidden="true"></span>Read Elkin’s story</a>
+        <a class="story-band__more" href="#">Discover more stories like this</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. JOIN OUR MOVEMENT ============ -->
+  <section class="section join texture texture--orange" id="join" aria-labelledby="join-title">
+    <div class="container">
+      <div class="join__top">
+        <div class="join__head">
+          <div class="milagro milagro--big" data-milagro aria-hidden="true">
+            <img class="milagro__wing milagro__wing--l" src="img/milagro-wing-l-640.png" width="640" height="344" alt="">
+            <img class="milagro__wing milagro__wing--r" src="img/milagro-wing-r-640.png" width="640" height="344" alt="">
+            <img class="milagro__heart" src="img/milagro-heart-640.png" width="640" height="344" alt="">
+          </div>
+          <h2 class="join__title" id="join-title">JOIN OUR MOVEMENT</h2>
+          <p class="join__sub"><span class="chip chip--teal">Help us build a world where everyone belongs.</span></p>
+        </div>
+        <figure class="frame frame--pink join__photo reveal">
+          <picture>
+            <source type="image/webp" srcset="img/marigolds-640.webp 640w, img/marigolds-1024.webp 1024w" sizes="(min-width: 960px) 44vw, 92vw">
+            <img src="img/marigolds-1024.webp" srcset="img/marigolds-640.webp 640w, img/marigolds-1024.webp 1024w" sizes="(min-width: 960px) 44vw, 92vw" width="1445" height="1041" loading="lazy" alt="A smiling group gathers in a field of bright orange marigolds.">
+          </picture>
+        </figure>
+      </div>
+
+      <ul class="join-cards">
+        <li class="join-card reveal">
+          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-sun"></use></svg>
+          <p>See how culture and healing transform lives.</p>
+          <a class="btn btn--primary" href="#programs">Explore our programs</a>
+        </li>
+        <li class="join-card reveal">
+          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-envelope"></use></svg>
+          <p>Receive stories and invitations to our celebrations.</p>
+          <!-- Mailchimp form goes here -->
+          <form class="signup" action="#" method="post">
+            <label class="sr-only" for="join-email">Your email</label>
+            <input id="join-email" type="email" name="email" placeholder="Your email" autocomplete="email" required>
+            <button class="btn btn--primary" type="submit">Join our <em lang="es">familia!</em></button>
+          </form>
+        </li>
+        <li class="join-card reveal">
+          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-heart-hand"></use></svg>
+          <p>Help more families experience love, dignity, and joy.</p>
+          <a class="btn btn--primary" href="#">Get involved</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div class="site-footer__brand">
+      <a aria-label="ALAS home" class="site-footer__logo" href="/">
+        <picture>
+          <source type="image/webp" srcset="img/alas-logo-160.webp 1x, img/alas-logo-320.webp 2x">
+          <img src="img/alas-logo-160.webp" alt="" width="120" height="120" loading="lazy">
+        </picture>
+      </a>
+      <ul class="social" aria-label="ALAS on social media">
+        <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" class="fill"></circle></svg></a></li>
+        <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"></path></svg></a></li>
+        <li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"></path></svg></a></li>
+        <li><a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5M14 4c.5 2.5 2.5 4 5 4"></path></svg></a></li>
+      </ul>
+    </div>
+
+    <nav class="site-footer__links" aria-label="Footer">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#">News &amp; Stories</a></li>
+        <li><a href="#join">Get Involved</a></li>
+        <li><a href="#">Get Support</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Donate</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-footer__contact">
+      <p><strong>ALAS Cultural Wellness Center</strong><br>
+        507 Purissima Street, Half Moon Bay, CA 94019<br>
+        <a href="tel:+16505608947">650-560-8947</a><br>
+        <a href="mailto:alas@alasdreams.com">alas@alasdreams.com</a></p>
+    </div>
+
+    <form class="site-footer__signup signup" action="#" method="post">
+      <label for="footer-email">Join our <em lang="es">familia!</em></label>
+      <div class="signup__row">
+        <input id="footer-email" type="email" name="email" placeholder="Your email" autocomplete="email" required>
+        <button class="btn btn--primary btn--small" type="submit">Sign up</button>
+      </div>
+    </form>
+  </div>
+  <div class="site-footer__legal">
+    <div class="container">
+      <p>© 2026 ALAS · Ayudando Latinos A Soñar</p>
+      <p class="ph ph--on-dark">[Legal links: privacy, accessibility · to confirm]</p>
+    </div>
+  </div>
+</footer>
+
+<!-- The colibrí's journey: takes off from step 6 of the model ("pollinate other communities"),
+     pollinates the programs and impact along the way, and lands on the milagro at Join. -->
+<div class="colibri-journey" data-colibri-journey aria-hidden="true">
+  <svg class="colibri-journey__trail" data-trail></svg>
+  <div class="colibri-journey__bird" data-bird>
+    <svg class="colibri" viewBox="0 0 100 80"><use href="#colibri"></use></svg>
+  </div>
+</div>
+
+<!-- ============ SVG SPRITES (all TEMP until the real brand files arrive) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+
+    <!-- TEMP colibrí (hummingbird). Replace with the official illustration. -->
+    <symbol id="colibri" viewBox="0 0 100 80">
+      <path d="M27 31 L2 25" stroke="#362555" stroke-width="2.5" stroke-linecap="round"></path>
+      <path fill="#523F7A" d="M73 47 L97 57 L88 59 L95 68 L77 58 Z"></path>
+      <path fill="#44B7B4" d="M37 33 C52 27 70 35 79 50 C70 54 53 51 41 43 Z"></path>
+      <circle cx="33" cy="31" r="9" fill="#2E8E8B"></circle>
+      <path fill="#C84869" d="M28 35 Q34 46 45 41 Q40 35 35 33 Z"></path>
+      <circle cx="35" cy="29" r="1.8" fill="#fff"></circle><circle cx="35.4" cy="29" r=".9" fill="#362555"></circle>
+      <g class="colibri__wing">
+        <path fill="#FFD500" d="M49 35 C54 15 70 4 92 1 C82 12 72 24 59 39 Z"></path>
+        <path fill="#FF561C" d="M53 36 C58 22 68 13 82 9 C75 19 68 28 59 39 Z" opacity=".85"></path>
+      </g>
+    </symbol>
+
+    <!-- TEMP folk flower + corner ornament (flyer style). Replace with the official ornaments. -->
+    <symbol id="flower" viewBox="-20 -20 40 40">
+      <g fill="var(--p, #FFD500)">
+        <ellipse cx="0" cy="-10" rx="6.2" ry="10"/>
+        <ellipse cx="0" cy="-10" rx="6.2" ry="10" transform="rotate(60)"/>
+        <ellipse cx="0" cy="-10" rx="6.2" ry="10" transform="rotate(120)"/>
+        <ellipse cx="0" cy="-10" rx="6.2" ry="10" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-10" rx="6.2" ry="10" transform="rotate(240)"/>
+        <ellipse cx="0" cy="-10" rx="6.2" ry="10" transform="rotate(300)"/>
+      </g>
+      <circle r="7" fill="var(--c, #C84869)"/>
+      <circle r="2.6" fill="#fff"/>
+    </symbol>
+    <symbol id="folk-corner" viewBox="0 0 200 240">
+      <g fill="#2E8E8B">
+        <ellipse cx="64" cy="60" rx="5" ry="13" transform="rotate(55 64 60)"/>
+        <ellipse cx="46" cy="76" rx="4.5" ry="12" transform="rotate(20 46 76)"/>
+        <ellipse cx="92" cy="40" rx="4.5" ry="11" transform="rotate(75 92 40)"/>
+      </g>
+      <use href="#flower" x="6" y="6" width="64" height="64" style="--p:#FFD500;--c:#C84869"/>
+      <use href="#flower" x="62" y="2" width="38" height="38" style="--p:#FFFFFF;--c:#44B7B4"/>
+      <use href="#flower" x="0" y="70" width="40" height="40" style="--p:#F6A5CC;--c:#523F7A"/>
+      <use href="#flower" x="58" y="54" width="28" height="28" style="--p:#44B7B4;--c:#FFD500"/>
+      <g>
+        <circle cx="118" cy="22" r="3.6" fill="#FFD500"/><circle cx="132" cy="22" r="3.6" fill="#fff"/><circle cx="146" cy="22" r="3.6" fill="#44B7B4"/>
+        <circle cx="160" cy="22" r="3.6" fill="#F6A5CC"/><circle cx="174" cy="22" r="3.6" fill="#FFD500"/><circle cx="188" cy="22" r="3.6" fill="#fff"/>
+        <circle cx="14" cy="122" r="3.6" fill="#FFD500"/><circle cx="14" cy="136" r="3.6" fill="#fff"/><circle cx="14" cy="150" r="3.6" fill="#44B7B4"/>
+        <circle cx="14" cy="164" r="3.6" fill="#F6A5CC"/><circle cx="14" cy="178" r="3.6" fill="#FFD500"/><circle cx="14" cy="192" r="3.6" fill="#fff"/>
+        <circle cx="14" cy="206" r="3.6" fill="#44B7B4"/><circle cx="14" cy="220" r="3.6" fill="#F6A5CC"/>
+      </g>
+    </symbol>
+
+    <!-- TEMP line icons (style guide: purple outline, rounded strokes). Replace with the official set. -->
+    <symbol id="icon-sun" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="24" cy="26" r="8"></circle><path d="M24 8v5M10 14l3.5 3.5M38 14l-3.5 3.5M5 28h5M38 28h5M8 40h32"></path>
+      </g>
+    </symbol>
+    <symbol id="icon-envelope" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="6" y="11" width="36" height="26" rx="4"></rect><path d="M7 13l17 13 17-13"></path>
+      </g>
+    </symbol>
+    <symbol id="icon-heart-hand" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M24 26c-6-4-9-7-9-10.5a4.5 4.5 0 0 1 9-1.5 4.5 4.5 0 0 1 9 1.5C33 19 30 22 24 26z"></path>
+        <path d="M5 34h7l7 3h8a3 3 0 0 0 0-6h-6M12 34v8M27 34l9-4a3 3 0 0 1 3 5l-11 7H12"></path>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
